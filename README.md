@@ -1,5 +1,38 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Summary
+
+Star Books is a space based start-up company that preserves archives of books in space for future generations. This project provides a UI for managing the libraries and collections that are sent via satellite. The data is sent as JSON data from the satellites, and can be input into this application's back-end to then show and help manage Star Book's archive for generations to come. Currently, this application only accepts JSON data formatted as shown below. 
+
+### `JSON Example`
+
+{
+    "timestamp": 1538497104,
+    "satellite_id": 157,
+    "collection": [
+        {
+            "set_id": 1,
+            "condition": "Good",
+            "status": "OK",
+            "errors": []
+        },
+        {
+            "set_id": 2,
+            "condition": "Debris damage, loss of 50%",
+            "status": "DAMAGED",
+            "errors": [
+                "Unknown debris collision"
+            ]
+        },
+        {
+            "set_id": 5,
+            "condition": "Repaired",
+            "status": "OK",
+            "errors": []
+        }
+    ]
+}
+
 ## Available Scripts
 
 In the project directory, you can run:
