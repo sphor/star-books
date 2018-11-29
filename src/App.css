@@ -1,0 +1,169 @@
+.column {
+    float:left;
+    margin:0 1%;
+}
+
+.flex{
+    display: flex;
+}
+
+.row {
+    width:100%;
+    padding:90px 0;
+    display:inline-block;
+}
+.row:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.text {padding-top:15px;}
+
+.grid12 {width:98%;}
+.grid11 {width:89.6667%;}
+.grid10 {width:81.3333%;}
+.grid9 {width:73%;}
+.grid8 {width:65%;}
+.grid7 {width:56.3333%;}
+.grid6 {width:48%;}
+.grid5 {width:39.6667%;}
+.grid4 {width:31%;}
+.grid3 {width:23%;}
+.grid2 {width:14.6667%;}
+.grid1 {width:6.3333%;}
+
+.clear {clear:both;}
+
+.alignleft {
+    float:left;
+    margin-right:20px !important;
+}
+
+.alignright {
+    float:right;
+    margin-left:20px !important;
+}
+
+.alignmid {
+    display:block;
+    margin:0 auto;
+}
+
+.tleft{
+    text-align: left;
+}
+.tright{
+    text-align: right;
+}
+.center {text-align:center;}
+
+/* =========================================================================================================== */
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 10vmin;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-header .logo-set span{
+    font-weight: bold;
+}
+
+.App-header .nav-set {
+    text-align: right;
+}
+
+.App-header .nav-set h2 {
+    font-size: 1em;
+}
+
+.App-header .flex{
+    align-items: center;
+}
+
+.App-IO{
+    display: flex;
+    align-items: stretch;
+    min-height: 80vh;
+    padding: 5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.App-IO .module{
+    margin: 0 5px;
+    background-color: #dedede;
+    padding: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.App-IO .flex{
+    justify-content: space-between;
+}
+
+.App-IO .set{
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.App-IO .input-set textarea{
+    width: 100%;
+    height: 50%;
+}
+
+.App-IO .input-set button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #282c34;
+    border: none;
+    cursor: pointer;
+}
+
+.App-IO .input-set button:hover{
+    background-color: #3c424e;
+}
+
+.App-IO .output-set h3{
+    text-transform: none;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12 {
+        width:100%;
+        margin:0;
+    }
+    
+    .App-IO{
+        display: block;
+    }
+
+    .App-IO .module{
+        margin-bottom: 20px;
+        -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+    }
+}

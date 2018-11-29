@@ -1,0 +1,26 @@
+{
+    "timestamp": 1538497104,
+    "satellite_id": 157,
+    "collection": [
+        {
+            "set_id": 1,
+            "condition": "Good",
+            "status": "OK",
+            "errors": []
+        },
+        {
+            "set_id": 2,
+            "condition": "Debris damage, loss of 50%",
+            "status": "DAMAGED",
+            "errors": [
+                "Unknown debris collision"
+            ]
+        },
+        {
+            "set_id": 5,
+            "condition": "Repaired",
+            "status": "OK",
+            "errors": []
+        }
+    ]
+}
